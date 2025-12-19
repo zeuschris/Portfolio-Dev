@@ -10,7 +10,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Chris Portfolio - Desarrollador Frontend Creativo",
+  title: "Chris Portfolio - Desarrollador Frontend",
   description:
     "Portfolio profesional de Christopher Montes - Desarrollo web moderno con React, WordPress y tecnologías modernas",
   generator: "v0.app",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     apple: "/images/chris-profile-favicon.png",
   },
   openGraph: {
-    title: "Chris Portfolio - Desarrollador Frontend Creativo",
+    title: "Chris Portfolio - Desarrollador Frontend",
     description:
       "Portfolio profesional de Christopher Montes - Desarrollo web moderno con React, WordPress y tecnologías modernas",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/images/chris-image-sin-fondo.png",
         width: 800,
         height: 800,
-        alt: "Christopher Montes - Desarrollador Frontend Creativo",
+        alt: "Christopher Montes - Desarrollador Frontend",
       },
     ],
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chris Portfolio - Desarrollador Frontend Creativo",
+    title: "Chris Portfolio - Desarrollador Frontend",
     description:
       "Portfolio profesional de Christopher Montes - Desarrollo web moderno con React, WordPress y tecnologías modernas",
     images: ["/images/chris-image-sin-fondo.png"],
