@@ -132,7 +132,7 @@ export function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary transition-all duration-500 ${
+              className={`group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary transition-all duration-500 flex flex-col h-full ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
@@ -143,15 +143,14 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                 />
-
-                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                
+                <div className="hidden md:flex absolute top-4 right-4 gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 z-20">
                   {project.github && (
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                      aria-label="Ver código en GitHub"
                     >
                       <Github className="w-5 h-5" />
                     </a>
@@ -161,14 +160,13 @@ export function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                    aria-label="Ver demo en vivo"
                   >
                     <ExternalLink className="w-5 h-5" />
                   </a>
                 </div>
               </div>
 
-              <div className="p-6 bg-card">
+              <div className="p-6 bg-card flex flex-col flex-grow md:pb-6 pb-20">
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
                   {project.title}
                 </h3>
@@ -176,17 +174,40 @@ export function Projects() {
                   {project.description[language]}
                 </p>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map((tag) => (
                     <span
                       key={tag.name}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-muted text-muted-foreground text-xs rounded-full transition-all duration-300 hover:bg-primary/20 hover:text-primary"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-muted text-muted-foreground text-xs rounded-full"
                     >
                       <i className={`${tag.icon} text-base`} title={tag.name}></i>
                       {tag.name}
                     </span>
                   ))}
                 </div>
+              </div>
+
+              <div className="flex md:hidden absolute bottom-0 left-0 w-full border-t border-border bg-card/95 backdrop-blur-md z-10">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium text-muted-foreground border-r border-border active:bg-primary/10"
+                  >
+                    <Github size={18} />
+                    <span>GitHub</span>
+                  </a>
+                )}
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium text-primary active:bg-primary/10"
+                >
+                  <ExternalLink size={18} />
+                  <span>Demo</span>
+                </a>
               </div>
             </div>
           ))}
