@@ -64,7 +64,7 @@ export function Projects() {
         { name: "JavaScript", icon: "devicon-javascript-plain colored" },
         { name: "Astro", icon: "devicon-astro-plain colored" },
       ],
-      github: "https://github.com/zeuschris",
+      github: "https://github.com/zeuschris/Flower-Store",
       demo: "https://floral-sky.vercel.app/",
     },
     {
@@ -96,7 +96,7 @@ export function Projects() {
         { name: "Sass", icon: "devicon-sass-plain colored" },
         { name: "Firebase", icon: "devicon-firebase-plain colored" },
       ],
-      github: "https://github.com/zeuschris",
+      github: "https://github.com/zeuschris/giotecnika",
       demo: "https://giotecnika.netlify.app/",
     },
     {
