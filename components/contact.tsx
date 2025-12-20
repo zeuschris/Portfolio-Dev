@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useEffect, useRef, useState } from "react"
 import { Github, Linkedin, Mail } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
@@ -28,18 +27,14 @@ export function Contact() {
     return () => observer.disconnect()
   }, [])
 
+  const emailAddress = "zeuschris123@gmail.com"
+  const emailSubject = "Contacto desde Portfolio"
+
   const socials = [
     { icon: Github, label: "GitHub", href: "https://github.com/zeuschris/" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/christophermontes158/" },
-    { icon: Mail, label: "Email", href: "mailto:zeuschris123@gmail.com" },
+    { icon: Mail, label: "Email", href: `mailto:${emailAddress}` },
   ]
-
-  const handleEmailClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    const email = "zeuschris123@gmail.com"
-    const subject = "Contacto desde Portfolio"
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`
-  }
 
   return (
     <section ref={sectionRef} className="py-24 px-4 bg-muted/30">
@@ -54,13 +49,16 @@ export function Contact() {
             {t("contact.description")}
           </p>
 
-          <button
-            onClick={handleEmailClick}
+          {/* Botón principal actualizado a etiqueta <a> */}
+          <a
+            href={`mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all hover:scale-105 active:scale-95 mb-12"
           >
             <Mail className="w-5 h-5" />
             {t("contact.cta")}
-          </button>
+          </a>
 
           <div className="flex justify-center gap-4 mt-8">
             {socials.map((social, index) => {
