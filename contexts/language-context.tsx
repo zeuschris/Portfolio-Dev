@@ -17,7 +17,7 @@ const translations = {
     "hero.title1": "Desarrollador",
     "hero.title2": "Frontend Creativo",
     "hero.description":
-      "Desarrollador Full Stack con pasión por crear experiencias web interactivas y visualmente atractivas. Especializado en tecnologías como HTML, CSS, JavaScript, WordPress y React.",
+      "Desarrollador Frontend con pasión por crear experiencias web interactivas y visualmente atractivas. Especializado en tecnologías como HTML, CSS, JavaScript, WordPress y React.",
     "hero.cta": "Ver proyectos",
 
     // About
@@ -46,7 +46,7 @@ const translations = {
     "hero.title1": "Creative",
     "hero.title2": "Frontend Developer",
     "hero.description":
-      "Full Stack Developer with a passion for creating interactive and visually appealing web experiences. Specialized in technologies like HTML, CSS, JavaScript, WordPress and React.",
+      "Frontend Developer with a passion for creating interactive and visually appealing web experiences. Specialized in technologies like HTML, CSS, JavaScript, WordPress and React.",
     "hero.cta": "View projects",
 
     // About

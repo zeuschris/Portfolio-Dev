@@ -1,31 +1,44 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
-export function useTypingEffect(text: string, speed = 50) {
+const animationRegistry = new Map<string, boolean>()
+
+export function useTypingEffect(text: string, speed: number = 50) {
   const [displayedText, setDisplayedText] = useState("")
   const [isComplete, setIsComplete] = useState(false)
+  
+  const hookId = useRef<string>()
+  
+  if (!hookId.current) {
+    hookId.current = `typing-${Date.now()}-${Math.random()}`
+  }
 
   useEffect(() => {
+
+    if (animationRegistry.get(hookId.current!)) {
+      setDisplayedText(text)
+      setIsComplete(true)
+      return
+    }
+
+    animationRegistry.set(hookId.current!, true)
+    
+    let currentIndex = 0
     setDisplayedText("")
     setIsComplete(false)
-    let index = 0
 
-    const timeoutId = setTimeout(() => {
-      const intervalId = setInterval(() => {
-        if (index < text.length) {
-          setDisplayedText(text.substring(0, index + 1))
-          index++
-        } else {
-          setIsComplete(true)
-          clearInterval(intervalId)
-        }
-      }, speed)
+    const timer = setInterval(() => {
+      if (currentIndex < text.length) {
+        setDisplayedText(text.slice(0, currentIndex + 1))
+        currentIndex++
+      } else {
+        setIsComplete(true)
+        clearInterval(timer)
+      }
+    }, speed)
 
-      return () => clearInterval(intervalId)
-    }, 100)
-
-    return () => clearTimeout(timeoutId)
+    return () => clearInterval(timer)
   }, [text, speed])
 
   return { displayedText, isComplete }
