@@ -8,7 +8,7 @@
 
 Portfolio personal moderno y responsivo desarrollado con las últimas tecnologías web. Diseñado para mostrar proyectos, habilidades y experiencia como desarrollador frontend.
 
-![Portfolio Preview](https://raw.githubusercontent.com/zeuschris/Portfolio-Dev/main/public/images/preview.gif)
+![Portfolio Preview](https://raw.githubusercontent.com/zeuschris/Portfolio-Dev/main/public/images/preview.webp)
 
 ## ✨ Características
 
