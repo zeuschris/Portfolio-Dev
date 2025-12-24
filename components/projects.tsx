@@ -58,9 +58,7 @@ export function Projects() {
       },
       image: "/images/projects/flowers.webp",
       tags: [
-        { name: "CSS", icon: "devicon-css3-plain colored" },
         { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
-        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
         { name: "Astro", icon: "devicon-astro-plain colored" },
       ],
       github: "https://github.com/zeuschris/Flower-Store",
