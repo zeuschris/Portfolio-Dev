@@ -45,7 +45,6 @@ export function Projects() {
       image: "/images/projects/chris-designs.webp",
       tags: [
         { name: "WordPress", icon: "devicon-wordpress-plain colored" },
-        { name: "Elementor", icon: "devicon-wordpress-plain colored" },
         { name: "CSS", icon: "devicon-css3-plain colored" },
       ],
       github: null,
