@@ -86,8 +86,8 @@ export function Projects() {
     {
       title: "Giotecnika",
       description: {
-        es: "E-commerce de papelería premium con React y Firebase.",
-        en: "Premium stationery e-commerce with React and Firebase.",
+        es: "E-commerce de papelería con React y Firebase.",
+        en: "stationery e-commerce with React and Firebase.",
       },
       image: "/images/projects/giotecnika.webp",
       tags: [
