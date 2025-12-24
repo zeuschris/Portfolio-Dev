@@ -22,7 +22,7 @@ const translations = {
 
     // About
     "about.title": "Sobre mí",
-    "about.description": "Apasionado por crear soluciones digitales innovadoras y funcionales",
+    "about.description": "Con más de 3 años de experiencia en desarrollo web, me especializo en transformar ideas en productos digitales que combinan diseño atractivo con código limpio y eficiente. Mi enfoque está en crear soluciones que no solo funcionen bien, sino que también brinden experiencias memorables a los usuarios.",
     "about.skill1.title": "Desarrollo",
     "about.skill1.description": "Especializado en React y WordPress.",
     "about.skill2.title": "Diseño",

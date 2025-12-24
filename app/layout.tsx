@@ -10,6 +10,11 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_SITE_URL || "https://tu-dominio.com"
+      : "http://localhost:3000"
+  ),
   title: "Chris Portfolio - Desarrollador Frontend",
   description:
     "Portfolio profesional de Christopher Montes - Desarrollo web moderno con React, WordPress y tecnologías modernas",

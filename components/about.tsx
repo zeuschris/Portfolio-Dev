@@ -8,14 +8,9 @@ import { useTypingEffect } from "@/hooks/use-typing-effect"
 export function About() {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
-  const { t, language } = useLanguage()
+  const { t } = useLanguage()
 
-  const biographyTexts = {
-    es: "Desarrollador Frontend con pasión por crear experiencias web interactivas y visualmente atractivas. Especializado en tecnologías como HTML, CSS, JavaScript, WordPress y React.",
-    en: "Frontend Developer with a passion for creating interactive and visually appealing web experiences. Specialized in technologies such as HTML, CSS, JavaScript, WordPress and React."
-  }
-
-  const description = biographyTexts[language as keyof typeof biographyTexts] || biographyTexts.es
+  const description = t("about.description")
   const { displayedText, isComplete } = useTypingEffect(description, 30)
 
   useEffect(() => {
@@ -64,7 +59,7 @@ export function About() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("about.title")}</h2>
           
           <div className="max-w-3xl mx-auto mt-8">
-            <p className="text-lg md:text-xl text-muted-foreground text-center leading-relaxed min-h-[4rem]">
+            <p className="text-lg md:text-xl text-muted-foreground text-center leading-relaxed min-h-16">
               {displayedText}
               {!isComplete && (
                 <span className="inline-block w-0.5 h-5 ml-1 bg-primary animate-pulse" />
