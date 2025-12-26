@@ -37,38 +37,10 @@ export function Projects() {
 
   const projects = [
     {
-      title: "Chris Designs",
-      description: {
-        es: "Sitio web de mis diseños creados en Canva.",
-        en: "Website showcasing my designs created in Canva.",
-      },
-      image: "/images/projects/chris-designs.webp",
-      tags: [
-        { name: "WordPress", icon: "devicon-wordpress-plain colored" },
-        { name: "CSS", icon: "devicon-css3-plain colored" },
-      ],
-      github: null,
-      demo: "https://dev-chris-designs.pantheonsite.io/",
-    },
-    {
-      title: "Flowers Store",
-      description: {
-        es: "Tienda de flores creada con un diseño natural y moderno con Astro.",
-        en: "Flower store created with a natural and modern design using Astro.",
-      },
-      image: "/images/projects/flowers.webp",
-      tags: [
-        { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
-        { name: "Astro", icon: "devicon-astro-plain colored" },
-      ],
-      github: "https://github.com/zeuschris/Flower-Store",
-      demo: "https://floral-sky.vercel.app/",
-    },
-    {
       title: "Art Store",
       description: {
-        es: "E-commerce moderno de productos personalizados (gorras, tazas, remeras, sweaters) con carrito de compras y gestión de órdenes.",
-        en: "Modern e-commerce for personalized products (caps, mugs, t-shirts, sweaters) with shopping cart and order management.",
+        es: "Aplicación e-commerce moderno de productos personalizados (gorras, tazas, remeras, sweaters) con catálogo dinámico, carrito completo, validación de formularios, generación de órdenes y diseño responsive.",
+        en: "Modern personalized products e-commerce app with dynamic catalog, full shopping cart, form validation, order generation and responsive design.",
       },
       image: "/images/projects/art-store.webp",
       tags: [
@@ -83,8 +55,8 @@ export function Projects() {
     {
       title: "Giotecnika",
       description: {
-        es: "E-commerce de papelería con React y Firebase.",
-        en: "stationery e-commerce with React and Firebase.",
+        es: "E-commerce de papelería moderno y responsivo, desarrollado con React, Vite y Firebase/Firestore. Incluye catálogo con filtros, carrito persistente, modo oscuro/claro, búsqueda en tiempo real y checkout validado.",
+        en: "Modern, responsive stationery e-commerce app built with React, Vite and Firebase/Firestore. Includes filtered product catalog, persistent cart, light/dark mode, real-time search and validated checkout.",
       },
       image: "/images/projects/giotecnika.webp",
       tags: [
@@ -97,10 +69,24 @@ export function Projects() {
       demo: "https://giotecnika.netlify.app/",
     },
     {
+      title: "Flowers Store",
+      description: {
+        es: "Tienda online de flores desarrollada con Astro y Tailwind CSS, con un diseño moderno y natural enfocado en la experiencia de usuario. Interfaz limpia, rápida y totalmente responsive.",
+        en: "Online flower shop built with Astro and Tailwind CSS, featuring a modern, nature-inspired design focused on user experience. Clean, fast, and fully responsive interface.",
+      },
+      image: "/images/projects/flowers.webp",
+      tags: [
+        { name: "Astro", icon: "devicon-astro-plain colored" },
+        { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
+      ],
+      github: "https://github.com/zeuschris/Flower-Store",
+      demo: "https://floral-sky.vercel.app/",
+    },
+    {
       title: "Naturaleza Viva",
       description: {
-        es: "Sitio web desarrollado con WordPress y Elementor para un vivero ecológico.",
-        en: "Website developed with WordPress and Elementor for an ecological nursery.",
+        es: "Sitio web desarrollado con WordPress y Elementor para un vivero ecológico, con catálogo de plantas, tienda online, secciones de blog y cuidados de plantas, y diseño atractivo y responsive.",
+        en: "WordPress site built with Elementor for an ecological plant nursery, featuring a plant catalog, online shop, blog and plant care guides, with a clean, engaging and responsive design.",
       },
       image: "/images/projects/nature.webp",
       tags: [
