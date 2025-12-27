@@ -46,8 +46,7 @@ export function Projects() {
       tags: [
         { name: "React", icon: "devicon-react-plain colored" },
         { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
-        { name: "Firebase", icon: "devicon-firebase-plain colored" },
-        { name: "Gemini AI", icon: "devicon-google-plain colored" },
+        { name: "Firebase", icon: "devicon-firebase-plain colored" }
       ],
       github: "https://github.com/zeuschris/Art-Store",
       demo: "https://art-store-pink.vercel.app/",
