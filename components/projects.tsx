@@ -37,6 +37,20 @@ export function Projects() {
 
   const projects = [
     {
+      title: "Weather Dashboard",
+      description: {
+        es: "Dashboard de clima moderno con React 19 y Tailwind CSS 4, integrado con la API de OpenWeatherMap. Incluye clima en tiempo real, búsqueda de ciudades, geolocalización opcional, pronóstico de 5 días, cambio de unidades y modo claro/oscuro con persistencia, todo en diseño responsive.",
+        en: "Modern weather dashboard built with React 19 and Tailwind CSS 4, powered by the OpenWeatherMap API. It features real-time weather, city search, optional geolocation, a 5-day forecast, unit switching, and persistent light/dark mode, all in a responsive layout.",
+      },
+      image: "/images/projects/weather-dashboard.webp",
+      tags: [
+        { name: "React", icon: "devicon-react-plain colored" },
+        { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
+      ],
+      github: "https://github.com/zeuschris/Weather-Dashboard",
+      demo: "https://weather-clima-dashboard.vercel.app/",
+    },
+    {
       title: "Art Store",
       description: {
         es: "Aplicación e-commerce moderno de productos personalizados (gorras, tazas, remeras, sweaters) con catálogo dinámico, carrito completo, validación de formularios, generación de órdenes y diseño responsive.",
