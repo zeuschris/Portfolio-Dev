@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ),
   title: "Chris Portfolio - Desarrollador Frontend",
   description:
-    "Portfolio profesional de Christopher Montes - Desarrollo web moderno con React, WordPress y tecnologías modernas",
+    "Portfolio profesional de Christopher Montes - Desarrollo web con tecnologías modernas",
   generator: "v0.app",
   icons: {
     icon: "/images/chris-profile-favicon.png",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chris Portfolio - Desarrollador Frontend",
     description:
-      "Portfolio profesional de Christopher Montes - Desarrollo web moderno con React, WordPress y tecnologías modernas",
+      "Portfolio profesional de Christopher Montes - Desarrollo web con tecnologías modernas",
     images: [
       {
         url: "/images/chris-image-sin-fondo.png",

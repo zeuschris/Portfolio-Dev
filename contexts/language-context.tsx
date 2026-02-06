@@ -17,7 +17,7 @@ const translations = {
     "hero.title1": "Desarrollador",
     "hero.title2": "Frontend Creativo",
     "hero.description":
-      "Desarrollador Frontend con pasión por crear experiencias web interactivas y visualmente atractivas. Especializado en tecnologías como HTML, CSS, JavaScript, WordPress y React.",
+      "Desarrollador Frontend React apasionado por crear experiencias web innovadoras que fusionan diseño moderno con inteligencia artificial. Especializado en React, WordPress y la integración de APIs de IA (OpenAI, Anthropic, Vercel AI SDK) para construir interfaces inteligentes, chatbots conversacionales y aplicaciones web con capacidades de ML.",
     "hero.cta": "Ver proyectos",
 
     // About
@@ -26,9 +26,9 @@ const translations = {
     "about.skill1.title": "Desarrollo",
     "about.skill1.description": "Especializado en React y WordPress.",
     "about.skill2.title": "Diseño",
-    "about.skill2.description": "Creación de interfaces intuitivas y experiencias de usuario memorables.",
+    "about.skill2.description": "Creación de interfaces intuitivas y accesibles con enfoque en experiencia de usuario excepcional, utilizando principios de diseño moderno y sistemas de componentes escalables.",
     "about.skill3.title": "Performance",
-    "about.skill3.description": "Optimización y mejores prácticas para aplicaciones rápidas y escalables.",
+    "about.skill3.description": "Desarrollo de aplicaciones web rápidas mediante técnicas avanzadas: code splitting, lazy loading, optimización de renders, y mejores prácticas de Web Vitals para experiencias fluidas.",
 
     // Projects
     "projects.title": "Proyectos Destacados",
@@ -46,18 +46,18 @@ const translations = {
     "hero.title1": "Creative",
     "hero.title2": "Frontend Developer",
     "hero.description":
-      "Frontend Developer with a passion for creating interactive and visually appealing web experiences. Specialized in technologies like HTML, CSS, JavaScript, WordPress and React.",
+      "Passionate React Frontend Developer creating innovative web experiences that blend modern design with artificial intelligence. Specialized in React, WordPress, and integrating AI APIs (OpenAI, Anthropic, Vercel AI SDK) to build intelligent interfaces, conversational chatbots, and ML-powered web applications.",
     "hero.cta": "View projects",
 
-    // About
-    "about.title": "About me",
-    "about.description": "Passionate about creating innovative and functional digital solutions",
+        // About
+    "about.title": "About Me",
+    "about.description": "With over 3+ years of experience in web development, I specialize in transforming ideas into digital products that combine attractive design with clean and efficient code. My focus is on creating solutions that not only work well, but also deliver memorable experiences to users.",
     "about.skill1.title": "Development",
     "about.skill1.description": "Specialized in React and WordPress.",
     "about.skill2.title": "Design",
-    "about.skill2.description": "Creating intuitive interfaces and memorable user experiences.",
+    "about.skill2.description": "Creating intuitive and accessible interfaces with a focus on exceptional user experience, using modern design principles and scalable component systems.",
     "about.skill3.title": "Performance",
-    "about.skill3.description": "Optimization and best practices for fast and scalable applications.",
+    "about.skill3.description": "Building fast web applications using advanced techniques: code splitting, lazy loading, render optimization, and Web Vitals best practices for smooth experiences.",
 
     // Projects
     "projects.title": "Featured Projects",
