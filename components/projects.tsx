@@ -45,7 +45,7 @@ export function Projects() {
       image: "/images/projects/weather-dashboard.webp",
       tags: [
         { name: "React", icon: "devicon-react-plain colored" },
-        { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
+        { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
       ],
       github: "https://github.com/zeuschris/Weather-Dashboard",
       demo: "https://weather-clima-dashboard.vercel.app/",
