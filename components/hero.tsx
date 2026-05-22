@@ -18,13 +18,13 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-24 md:pt-32 lg:pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-28 md:pt-36 lg:pt-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.1),rgba(255,255,255,0))]" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}>
-            <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl bg-card">
+            <div className="w-48 h-48 mx-auto mt-8 mb-8 rounded-full overflow-hidden shadow-2xl bg-card">
               <Image
                 src="/images/chris-image-sin-fondo.webp"
                 alt="Christopher Montes"

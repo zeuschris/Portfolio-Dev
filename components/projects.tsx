@@ -1,13 +1,22 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
-import { ExternalLink, Github } from "lucide-react"
+import { useEffect, useRef, useState, type ComponentType, type SVGProps } from "react"
+import Link from "next/link"
+import { Cpu, Mic2, ExternalLink, Github, Lock, Sparkles } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
-const TechIcon = ({ name, icon }: { name: string; icon: string }) => {
+const ProjectTagIcon = ({
+  name,
+  icon,
+}: {
+  name: string
+  icon: string | ComponentType<SVGProps<SVGSVGElement>>
+}) => {
+  const Icon = typeof icon === "string" ? null : icon
+
   return (
     <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-muted text-muted-foreground text-xs rounded-full hover:bg-primary/10 transition-colors">
-      <i className={`${icon} text-base`} title={name}></i>
+      {Icon ? <Icon className="w-4 h-4 text-current" /> : <i className={`${icon} text-base text-foreground dark:text-white`} title={name}></i>}
       {name}
     </span>
   )
@@ -36,6 +45,38 @@ export function Projects() {
   }, [])
 
   const projects = [
+    {
+      title: "ViralCh AI",
+      description: {
+        es: "Plataforma de marketing de video impulsada por IA para crear contenido social viral. Genera guiones, miniaturas y clips optimizados para redes con edición rápida, diseños personalizados y una experiencia responsive.",
+        en: "AI-powered video marketing platform for creating viral social content. It generates scripts, thumbnails and optimized clips with fast editing, custom designs, and a responsive user experience.",
+      },
+      image: "/images/projects/viralch.webp",
+      tags: [
+        { name: "Next Js", icon: "devicon-nextjs-plain" },
+        { name: "OpenAI", icon: Sparkles },
+        { name: "Claude", icon: Cpu },
+        { name: "Whisper", icon: Mic2 },
+        { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
+      ],
+      github: "https://github.com/zeuschris/ViralCh-AI",
+      demo: "https://viralch-ai.vercel.app/",
+      privateRepo: true,
+    },
+    {
+      title: "Aires Sublimación",
+      description: {
+        es: "Tienda online de productos personalizados con sublimación full color. Ofrece tazas, mousepads, remeras y sweaters con impresión de alta definición, colores vibrantes y materiales resistentes, más atención personalizada y entrega rápida en Argentina.",
+        en: "Online store for custom sublimated products with full-color printing. It offers mugs, mousepads, t-shirts and sweaters with high-definition prints, vibrant colors and durable materials, plus personalized service and fast delivery in Argentina.",
+      },
+      image: "/images/projects/aires.webp",
+      tags: [
+        { name: "Next Js", icon: "devicon-nextjs-plain" },
+        { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
+      ],
+      github: "https://github.com/zeuschris/Aires-Sublimacion",
+      demo: "https://www.airesublimacion.com/",
+    },
     {
       title: "Weather Dashboard",
       description: {
@@ -142,14 +183,27 @@ export function Projects() {
                 
                 <div className="hidden md:flex absolute top-4 right-4 gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 z-20">
                   {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                    >
-                      <Github className="w-5 h-5" />
-                    </a>
+                    project.privateRepo ? (
+                      <Link
+                        href="/repo-privado"
+                        className="relative w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                      >
+                        <Github className="w-5 h-5" />
+                        <Lock className="absolute -bottom-1 -right-1 w-4 h-4 text-amber-400 bg-card rounded-full p-0.5 border border-border" />
+                      </Link>
+                    ) : (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                      >
+                        <Github className="w-5 h-5" />
+                        {project.privateRepo && (
+                          <Lock className="absolute -bottom-1 -right-1 w-4 h-4 text-amber-400 bg-card rounded-full p-0.5 border border-border" />
+                        )}
+                      </a>
+                    )
                   )}
                   <a
                     href={project.demo}
@@ -176,8 +230,7 @@ export function Projects() {
                       key={tag.name}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-muted text-muted-foreground text-xs rounded-full"
                     >
-                      <i className={`${tag.icon} text-base`} title={tag.name}></i>
-                      {tag.name}
+                      <ProjectTagIcon name={tag.name} icon={tag.icon} />
                     </span>
                   ))}
                 </div>
@@ -185,15 +238,30 @@ export function Projects() {
 
               <div className="flex md:hidden absolute bottom-0 left-0 w-full border-t border-border bg-card/95 backdrop-blur-md z-10">
                 {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium text-muted-foreground border-r border-border active:bg-primary/10"
-                  >
-                    <Github size={18} />
-                    <span>GitHub</span>
-                  </a>
+                  project.privateRepo ? (
+                    <Link
+                      href="/repo-privado"
+                      className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium text-muted-foreground border-r border-border active:bg-primary/10"
+                    >
+                      <Github size={18} />
+                      <span className="inline-flex items-center gap-1">
+                        GitHub
+                        <Lock size={14} />
+                      </span>
+                    </Link>
+                  ) : (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium text-muted-foreground border-r border-border active:bg-primary/10"
+                    >
+                      <Github size={18} />
+                      <span className="inline-flex items-center gap-1">
+                        GitHub
+                      </span>
+                    </a>
+                  )
                 )}
                 <a
                   href={project.demo}

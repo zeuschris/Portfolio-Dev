@@ -14,21 +14,21 @@ type LanguageContextType = {
 const translations = {
   es: {
     // Hero
-    "hero.title1": "Desarrollador",
-    "hero.title2": "Frontend Creativo",
+    "hero.title1": "Desarrollador Web de IA",
+    "hero.title2": "Creador de Micro-SaaS",
     "hero.description":
-      "Desarrollador Frontend React apasionado por crear experiencias web innovadoras que fusionan diseño moderno con inteligencia artificial. Especializado en React, WordPress y la integración de APIs de IA (OpenAI, Anthropic, Vercel AI SDK) para construir interfaces inteligentes, chatbots conversacionales y aplicaciones web con capacidades de ML.",
+      "Desarrollador Full Stack especializado en la creación de aplicaciones impulsadas por Inteligencia Artificial y plataformas Micro-SaaS escalables. Utilizando Next.js, React y TypeScript. Al integrar flujos de trabajo avanzados con agentes de IA, optimizo los ciclos de desarrollo y entrego software listo para producción enfocado en resolver necesidades reales.",
     "hero.cta": "Ver proyectos",
 
     // About
     "about.title": "Sobre mí",
-    "about.description": "Con más de 3 años de experiencia en desarrollo web, me especializo en transformar ideas en productos digitales que combinan diseño atractivo con código limpio y eficiente. Mi enfoque está en crear soluciones que no solo funcionen bien, sino que también brinden experiencias memorables a los usuarios.",
+    "about.description": "Con más de 5 años creando plataformas Micro-SaaS e iniciativas de IA. Optimizo ciclos de entrega con agentes y herramientas de desarrollo asistido, entregando productos escalables, eficientes y listos para el mercado.",
     "about.skill1.title": "Desarrollo",
-    "about.skill1.description": "Especializado en React y WordPress.",
+    "about.skill1.description": "Full-Stack con Next.js, React y TypeScript para soluciones de IA escalables.",
     "about.skill2.title": "Diseño",
-    "about.skill2.description": "Creación de interfaces intuitivas y accesibles con enfoque en experiencia de usuario excepcional, utilizando principios de diseño moderno y sistemas de componentes escalables.",
+    "about.skill2.description": "Interfaces accesibles y modernas para UX de herramientas IA, con sistemas de componentes modulares y Dark Mode.",
     "about.skill3.title": "Performance",
-    "about.skill3.description": "Desarrollo de aplicaciones web rápidas mediante técnicas avanzadas: code splitting, lazy loading, optimización de renders, y mejores prácticas de Web Vitals para experiencias fluidas.",
+    "about.skill3.description": "SSR e ISR en Next.js para cargas rápidas, optimizando Web Vitals, SEO y retención.",
 
     // Projects
     "projects.title": "Proyectos Destacados",
@@ -43,15 +43,15 @@ const translations = {
   },
   en: {
     // Hero
-    "hero.title1": "Creative",
-    "hero.title2": "Frontend Developer",
+    "hero.title1": "AI Web Developer",
+    "hero.title2": "Micro-SaaS Creator",
     "hero.description":
-      "Passionate React Frontend Developer creating innovative web experiences that blend modern design with artificial intelligence. Specialized in React, WordPress, and integrating AI APIs (OpenAI, Anthropic, Vercel AI SDK) to build intelligent interfaces, conversational chatbots, and ML-powered web applications.",
+      "Full Stack developer specialized in building AI-powered applications and scalable Micro-SaaS platforms. Using Next.js, React, and TypeScript. By integrating advanced AI agent workflows, I optimize development cycles and deliver production-ready software focused on solving real needs.",
     "hero.cta": "View projects",
 
         // About
     "about.title": "About Me",
-    "about.description": "With over 3+ years of experience in web development, I specialize in transforming ideas into digital products that combine attractive design with clean and efficient code. My focus is on creating solutions that not only work well, but also deliver memorable experiences to users.",
+    "about.description": "Over 5 years building Micro-SaaS and AI-driven products. I streamline delivery cycles with assisted development tools, providing scalable, efficient solutions designed for market impact.",
     "about.skill1.title": "Development",
     "about.skill1.description": "Specialized in React and WordPress.",
     "about.skill2.title": "Design",

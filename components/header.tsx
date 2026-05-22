@@ -1,6 +1,6 @@
 "use client"
 
-import { Moon, Sun, Languages } from "lucide-react"
+import { Globe2, Moon, Sun } from "lucide-react"
 import { useTheme } from "@/contexts/theme-context"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -20,11 +20,11 @@ export function Header() {
         <div className="flex items-center gap-2">
           <button
             onClick={toggleLanguage}
-            className="w-10 h-10 rounded-full bg-card border border-border hover:border-primary flex items-center justify-center transition-all hover:scale-110"
+            className="inline-flex items-center gap-2 rounded-full bg-card border border-border hover:border-primary px-3 py-2 transition-all hover:scale-110"
             aria-label="Cambiar idioma"
           >
-            <Languages className="w-5 h-5" />
-            <span className="sr-only">{language === "es" ? "ES" : "EN"}</span>
+            <Globe2 className="w-5 h-5 text-primary" />
+            <span className="text-sm font-medium">{language === "es" ? "ES" : "EN"}</span>
           </button>
 
           <button
@@ -32,7 +32,7 @@ export function Header() {
             className="w-10 h-10 rounded-full bg-card border border-border hover:border-primary flex items-center justify-center transition-all hover:scale-110"
             aria-label="Cambiar tema"
           >
-            {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+            {theme === "light" ? <Moon className="w-5 h-5 text-slate-700" /> : <Sun className="w-5 h-5 text-amber-300" />}
           </button>
         </div>
       </div>
