@@ -24,15 +24,15 @@ export function Hero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}>
-            <div className="w-48 h-48 mx-auto mt-8 mb-8 rounded-full overflow-hidden shadow-2xl bg-card">
+            <div className="w-52 h-52 mx-auto mt-8 mb-8 flex items-center justify-center">
               <Image
-                src="/images/chris-image-sin-fondo.webp"
-                alt="Christopher Montes"
-                width={192}
-                height={192}
+                src="/images/chris-dev-ai-logo.png"
+                alt="Chris Dev AI"
+                width={208}
+                height={208}
                 priority
                 loading="eager"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain drop-shadow-[0_0_24px_rgba(34,211,238,0.25)]"
               />
             </div>
           </div>
@@ -42,7 +42,7 @@ export function Hero() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-balance">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
               {t("hero.title1")}
               <span className="block mt-2 bg-gradient-to-r from-violet-600 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent">
                 {t("hero.title2")}

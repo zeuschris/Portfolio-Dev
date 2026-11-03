@@ -22,13 +22,14 @@ const translations = {
 
     // About
     "about.title": "Sobre mí",
-    "about.description": "Con más de 5 años creando plataformas Micro-SaaS e iniciativas de IA. Optimizo ciclos de entrega con agentes y herramientas de desarrollo asistido, entregando productos escalables, eficientes y listos para el mercado.",
+    "about.description":
+      "Soy desarrollador freelance: trabajo codo a codo con vos para pasar de una idea a una web publicada. Uso Inteligencia Artificial de forma avanzada en mi proceso para acortar tiempos, cuidar el detalle y entregarte un resultado listo para atraer clientes.",
     "about.skill1.title": "Desarrollo",
-    "about.skill1.description": "Full-Stack con Next.js, React y TypeScript para soluciones de IA escalables.",
+    "about.skill1.description": "Código limpio con Next.js y automatización con IA para construir, ajustar y publicar tu sitio sin demoras innecesarias.",
     "about.skill2.title": "Diseño",
-    "about.skill2.description": "Interfaces accesibles y modernas para UX de herramientas IA, con sistemas de componentes modulares y Dark Mode.",
+    "about.skill2.description": "Jerarquía visual clara, tipografía cuidada y CTAs visibles para que tu marca se vea profesional y fácil de entender.",
     "about.skill3.title": "Performance",
-    "about.skill3.description": "SSR e ISR en Next.js para cargas rápidas, optimizando Web Vitals, SEO y retención.",
+    "about.skill3.description": "Carga ágil, SEO técnico y buena puntuación en Web Vitals para que tu web rinda bien desde el primer día.",
 
     // Projects
     "projects.title": "Proyectos Destacados",
@@ -42,7 +43,7 @@ const translations = {
     "contact.footer": "Todos los derechos reservados.",
 
     // WhatsApp
-    "whatsapp.hover": "¡Escribenos!",
+    "whatsapp.hover": "¡Escríbeme!",
     "whatsapp.aria": "Escribir por WhatsApp",
   },
   en: {
@@ -53,15 +54,16 @@ const translations = {
       "Modern frontend development with Next.js and Artificial Intelligence. Ultra-fast sites, mobile-optimized and focused on turning visitors into customers.",
     "hero.cta": "View projects",
 
-        // About
+    // About
     "about.title": "About Me",
-    "about.description": "Over 5 years building Micro-SaaS and AI-driven products. I streamline delivery cycles with assisted development tools, providing scalable, efficient solutions designed for market impact.",
+    "about.description":
+      "I'm a freelance developer: I work side by side with you to go from an idea to a live website. I use advanced Artificial Intelligence in my process to shorten timelines, polish the details, and deliver a result ready to attract clients.",
     "about.skill1.title": "Development",
-    "about.skill1.description": "Specialized in React and WordPress.",
+    "about.skill1.description": "Clean Next.js code and AI-assisted workflows to build, refine, and publish your site without unnecessary delays.",
     "about.skill2.title": "Design",
-    "about.skill2.description": "Creating intuitive and accessible interfaces with a focus on exceptional user experience, using modern design principles and scalable component systems.",
+    "about.skill2.description": "Clear visual hierarchy, careful typography, and visible CTAs so your brand looks professional and easy to understand.",
     "about.skill3.title": "Performance",
-    "about.skill3.description": "Building fast web applications using advanced techniques: code splitting, lazy loading, render optimization, and Web Vitals best practices for smooth experiences.",
+    "about.skill3.description": "Fast load, technical SEO, and strong Web Vitals so your site performs well from day one.",
 
     // Projects
     "projects.title": "Featured Projects",
@@ -75,7 +77,7 @@ const translations = {
     "contact.footer": "All rights reserved.",
 
     // WhatsApp
-    "whatsapp.hover": "¡Escribenos!",
+    "whatsapp.hover": "¡Escríbeme!",
     "whatsapp.aria": "Chat on WhatsApp",
   },
 }

@@ -28,7 +28,7 @@ export function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={t("whatsapp.aria")}
-      className="group fixed bottom-6 right-6 z-50 flex items-center gap-3 outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+      className="group fixed bottom-28 right-5 z-50 flex items-center gap-3 outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background md:bottom-32 md:right-6"
     >
       <span className="pointer-events-none translate-x-2 rounded-full bg-foreground px-3 py-1.5 text-sm font-medium text-background opacity-0 shadow-lg transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100">
         {t("whatsapp.hover")}

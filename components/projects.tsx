@@ -1,8 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState, type ComponentType, type SVGProps } from "react"
-import Link from "next/link"
-import { Cpu, Mic2, ExternalLink, Github, Lock, Sparkles } from "lucide-react"
+import { Cpu, Mic2, ExternalLink, Sparkles } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 const ProjectTagIcon = ({
@@ -51,12 +50,15 @@ export function Projects() {
         es: "Plataforma competitiva de Warcraft III con ranking, partidas ranked, clan wars y mapas custom. Experiencia oscura y cinematográfica, enfocada en la comunidad y el matchmaking justo.",
         en: "Competitive Warcraft III platform with rankings, ranked matches, clan wars and custom maps. Dark cinematic experience focused on community play and fair matchmaking.",
       },
-      image: "/images/projects/w3overdrive.png",
+      image: "/images/projects/w3overdrive.webp",
+      mediaGradient: "from-cyan-400/25 via-violet-500/20 to-fuchsia-500/15",
+      mediaGlow:
+        "bg-[radial-gradient(circle_at_30%_20%,rgba(34,211,238,0.22),transparent_45%),radial-gradient(circle_at_80%_80%,rgba(168,85,247,0.2),transparent_50%)]",
+      imagePosition: "object-[72%_center]",
       tags: [
         { name: "Next Js", icon: "devicon-nextjs-plain" },
         { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
       ],
-      github: null,
       demo: "https://w3overdrive.com/",
     },
     {
@@ -73,9 +75,7 @@ export function Projects() {
         { name: "Whisper", icon: Mic2 },
         { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
       ],
-      github: "https://github.com/zeuschris/ViralCh-AI",
       demo: "https://viralch-ai.vercel.app/",
-      privateRepo: true,
     },
     {
       title: "Aires Sublimación",
@@ -88,7 +88,6 @@ export function Projects() {
         { name: "Next Js", icon: "devicon-nextjs-plain" },
         { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
       ],
-      github: "https://github.com/zeuschris/Aires-Sublimacion",
       demo: "https://www.airesublimacion.com/",
     },
     {
@@ -102,7 +101,6 @@ export function Projects() {
         { name: "React", icon: "devicon-react-plain colored" },
         { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
       ],
-      github: "https://github.com/zeuschris/Weather-Dashboard",
       demo: "https://weather-clima-dashboard.vercel.app/",
     },
     {
@@ -118,7 +116,6 @@ export function Projects() {
         { name: "Sass", icon: "devicon-sass-plain colored" },
         { name: "Firebase", icon: "devicon-firebase-plain colored" },
       ],
-      github: "https://github.com/zeuschris/giotecnika",
       demo: "https://giotecnika.netlify.app/",
     },
     {
@@ -132,7 +129,6 @@ export function Projects() {
         { name: "Astro", icon: "devicon-astro-plain colored" },
         { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
       ],
-      github: "https://github.com/zeuschris/Flower-Store",
       demo: "https://floral-sky.vercel.app/",
     },
   ]
@@ -153,50 +149,52 @@ export function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary transition-all duration-500 flex flex-col h-full ${
+              className={`group relative bg-card rounded-2xl overflow-hidden border border-border/80 shadow-sm hover:border-violet-500/40 hover:shadow-xl hover:shadow-violet-500/10 transition-all duration-500 flex flex-col h-full ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="relative overflow-hidden aspect-video bg-muted">
-                <img
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
-                />
-                
-                <div className="hidden md:flex absolute top-4 right-4 gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 z-20">
-                  {project.github && (
-                    project.privateRepo ? (
-                      <Link
-                        href="/repo-privado"
-                        className="relative w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                      >
-                        <Github className="w-5 h-5" />
-                        <Lock className="absolute -bottom-1 -right-1 w-4 h-4 text-amber-400 bg-card rounded-full p-0.5 border border-border" />
-                      </Link>
-                    ) : (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                      >
-                        <Github className="w-5 h-5" />
-                        {project.privateRepo && (
-                          <Lock className="absolute -bottom-1 -right-1 w-4 h-4 text-amber-400 bg-card rounded-full p-0.5 border border-border" />
-                        )}
-                      </a>
-                    )
-                  )}
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
+              <div className="relative p-3 pb-0">
+                <div
+                  className={`relative overflow-hidden aspect-video rounded-xl bg-gradient-to-br via-muted ring-1 ring-border/60 ${
+                    "mediaGradient" in project && project.mediaGradient
+                      ? project.mediaGradient
+                      : "from-violet-500/15 to-fuchsia-500/10"
+                  }`}
+                >
+                  <div
+                    className={`pointer-events-none absolute inset-0 ${
+                      "mediaGlow" in project && project.mediaGlow
+                        ? project.mediaGlow
+                        : "bg-[radial-gradient(circle_at_30%_20%,rgba(139,92,246,0.18),transparent_55%)]"
+                    }`}
+                    aria-hidden="true"
+                  />
+                  <img
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    className={`relative z-[1] w-full h-full object-cover transition-all duration-700 group-hover:scale-105 ${
+                      "imagePosition" in project && project.imagePosition
+                        ? project.imagePosition
+                        : "object-center"
+                    }`}
+                  />
+                  <div
+                    className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-background/35 via-transparent to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-40"
+                    aria-hidden="true"
+                  />
+
+                  <div className="hidden md:flex absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-500 z-20">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Abrir ${project.title}`}
+                      className="w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors shadow-md"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -221,32 +219,6 @@ export function Projects() {
               </div>
 
               <div className="flex md:hidden absolute bottom-0 left-0 w-full border-t border-border bg-card/95 backdrop-blur-md z-10">
-                {project.github && (
-                  project.privateRepo ? (
-                    <Link
-                      href="/repo-privado"
-                      className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium text-muted-foreground border-r border-border active:bg-primary/10"
-                    >
-                      <Github size={18} />
-                      <span className="inline-flex items-center gap-1">
-                        GitHub
-                        <Lock size={14} />
-                      </span>
-                    </Link>
-                  ) : (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium text-muted-foreground border-r border-border active:bg-primary/10"
-                    >
-                      <Github size={18} />
-                      <span className="inline-flex items-center gap-1">
-                        GitHub
-                      </span>
-                    </a>
-                  )
-                )}
                 <a
                   href={project.demo}
                   target="_blank"
