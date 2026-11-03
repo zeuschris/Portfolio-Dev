@@ -17,19 +17,19 @@ const translations = {
     "hero.title1": "Landing Pages de Alto Impacto",
     "hero.title2": "para Negocios y Marcas",
     "hero.description":
-      "Desarrollo frontend moderno con Next.js e Inteligencia Artificial. Sitios ultrarrápidos, optimizados para celulares y enfocados en convertir visitas en clientes.",
+      "Desarrollo frontend moderno con Next.js e Inteligencia Artificial. Sitios ultrarrápidos, optimizados para dispositivos móviles y enfocados en convertir visitas en clientes.",
     "hero.cta": "Ver proyectos",
 
     // About
     "about.title": "Sobre mí",
     "about.description":
-      "Soy desarrollador freelance: trabajo codo a codo con vos para pasar de una idea a una web publicada. Uso Inteligencia Artificial de forma avanzada en mi proceso para acortar tiempos, cuidar el detalle y entregarte un resultado listo para atraer clientes.",
+      "Soy desarrollador freelance: trabajo contigo de cerca para pasar de una idea a un sitio web publicado. Uso Inteligencia Artificial de forma avanzada en mi proceso para reducir tiempos, cuidar cada detalle y entregarte un resultado listo para atraer clientes.",
     "about.skill1.title": "Desarrollo",
     "about.skill1.description": "Código limpio con Next.js y automatización con IA para construir, ajustar y publicar tu sitio sin demoras innecesarias.",
     "about.skill2.title": "Diseño",
-    "about.skill2.description": "Jerarquía visual clara, tipografía cuidada y CTAs visibles para que tu marca se vea profesional y fácil de entender.",
+    "about.skill2.description": "Jerarquía visual clara, tipografía cuidada y llamados a la acción visibles para que tu marca se vea profesional y fácil de entender.",
     "about.skill3.title": "Performance",
-    "about.skill3.description": "Carga ágil, SEO técnico y buena puntuación en Web Vitals para que tu web rinda bien desde el primer día.",
+    "about.skill3.description": "Carga rápida, SEO técnico y buena puntuación en Web Vitals para que tu sitio funcione bien desde el primer día.",
 
     // Projects
     "projects.title": "Proyectos Destacados",

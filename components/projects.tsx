@@ -50,11 +50,10 @@ export function Projects() {
         es: "Plataforma competitiva de Warcraft III con ranking, partidas ranked, clan wars y mapas custom. Experiencia oscura y cinematográfica, enfocada en la comunidad y el matchmaking justo.",
         en: "Competitive Warcraft III platform with rankings, ranked matches, clan wars and custom maps. Dark cinematic experience focused on community play and fair matchmaking.",
       },
-      image: "/images/projects/w3overdrive.webp",
+      image: "/images/projects/w3overdrive.jpg",
       mediaGradient: "from-cyan-400/25 via-violet-500/20 to-fuchsia-500/15",
       mediaGlow:
         "bg-[radial-gradient(circle_at_30%_20%,rgba(34,211,238,0.22),transparent_45%),radial-gradient(circle_at_80%_80%,rgba(168,85,247,0.2),transparent_50%)]",
-      imagePosition: "object-[72%_center]",
       tags: [
         { name: "Next Js", icon: "devicon-nextjs-plain" },
         { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
@@ -80,7 +79,7 @@ export function Projects() {
     {
       title: "Aires Sublimación",
       description: {
-        es: "Tienda online de productos personalizados con sublimación full color. Ofrece tazas, mousepads, remeras y sweaters con impresión de alta definición, colores vibrantes y materiales resistentes, más atención personalizada y entrega rápida en Argentina.",
+        es: "Tienda online de productos personalizados con sublimación a todo color. Ofrece tazas, pads para mouse, camisetas y sudaderas con impresión de alta definición, colores vibrantes y materiales resistentes, con atención personalizada y entrega rápida en Argentina.",
         en: "Online store for custom sublimated products with full-color printing. It offers mugs, mousepads, t-shirts and sweaters with high-definition prints, vibrant colors and durable materials, plus personalized service and fast delivery in Argentina.",
       },
       image: "/images/projects/aires.webp",
