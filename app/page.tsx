@@ -5,6 +5,7 @@ import { Projects } from "@/components/projects"
 import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
 import { Header } from "@/components/header"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export default function Portfolio() {
   return (
@@ -16,6 +17,7 @@ export default function Portfolio() {
         <Projects />
         <Contact />
       </main>
+      <WhatsAppButton />
     </>
   )
 }

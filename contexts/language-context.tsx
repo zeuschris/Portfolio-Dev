@@ -14,10 +14,10 @@ type LanguageContextType = {
 const translations = {
   es: {
     // Hero
-    "hero.title1": "Desarrollador Web de IA",
-    "hero.title2": "Creador de Micro-SaaS",
+    "hero.title1": "Landing Pages de Alto Impacto",
+    "hero.title2": "para Negocios y Marcas",
     "hero.description":
-      "Desarrollador Full Stack especializado en la creación de aplicaciones impulsadas por Inteligencia Artificial y plataformas Micro-SaaS escalables. Utilizando Next.js, React y TypeScript. Al integrar flujos de trabajo avanzados con agentes de IA, optimizo los ciclos de desarrollo y entrego software listo para producción enfocado en resolver necesidades reales.",
+      "Desarrollo frontend moderno con Next.js e Inteligencia Artificial. Sitios ultrarrápidos, optimizados para celulares y enfocados en convertir visitas en clientes.",
     "hero.cta": "Ver proyectos",
 
     // About
@@ -40,13 +40,17 @@ const translations = {
       "Estoy disponible para proyectos freelance y oportunidades de colaboración. ¡Hablemos sobre tu próxima idea!",
     "contact.cta": "Enviar mensaje",
     "contact.footer": "Todos los derechos reservados.",
+
+    // WhatsApp
+    "whatsapp.hover": "¡Escribenos!",
+    "whatsapp.aria": "Escribir por WhatsApp",
   },
   en: {
     // Hero
-    "hero.title1": "AI Web Developer",
-    "hero.title2": "Micro-SaaS Creator",
+    "hero.title1": "High-Impact Landing Pages",
+    "hero.title2": "for Businesses and Brands",
     "hero.description":
-      "Full Stack developer specialized in building AI-powered applications and scalable Micro-SaaS platforms. Using Next.js, React, and TypeScript. By integrating advanced AI agent workflows, I optimize development cycles and deliver production-ready software focused on solving real needs.",
+      "Modern frontend development with Next.js and Artificial Intelligence. Ultra-fast sites, mobile-optimized and focused on turning visitors into customers.",
     "hero.cta": "View projects",
 
         // About
@@ -69,6 +73,10 @@ const translations = {
       "I'm available for freelance projects and collaboration opportunities. Let's talk about your next idea!",
     "contact.cta": "Send message",
     "contact.footer": "All rights reserved.",
+
+    // WhatsApp
+    "whatsapp.hover": "¡Escribenos!",
+    "whatsapp.aria": "Chat on WhatsApp",
   },
 }
 

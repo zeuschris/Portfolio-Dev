@@ -46,6 +46,20 @@ export function Projects() {
 
   const projects = [
     {
+      title: "W3 OverDrive",
+      description: {
+        es: "Plataforma competitiva de Warcraft III con ranking, partidas ranked, clan wars y mapas custom. Experiencia oscura y cinematográfica, enfocada en la comunidad y el matchmaking justo.",
+        en: "Competitive Warcraft III platform with rankings, ranked matches, clan wars and custom maps. Dark cinematic experience focused on community play and fair matchmaking.",
+      },
+      image: "/images/projects/w3overdrive.png",
+      tags: [
+        { name: "Next Js", icon: "devicon-nextjs-plain" },
+        { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
+      ],
+      github: null,
+      demo: "https://w3overdrive.com/",
+    },
+    {
       title: "ViralCh AI",
       description: {
         es: "Plataforma de marketing de video impulsada por IA para crear contenido social viral. Genera guiones, miniaturas y clips optimizados para redes con edición rápida, diseños personalizados y una experiencia responsive.",
@@ -92,21 +106,6 @@ export function Projects() {
       demo: "https://weather-clima-dashboard.vercel.app/",
     },
     {
-      title: "Art Store",
-      description: {
-        es: "Aplicación e-commerce moderno de productos personalizados (gorras, tazas, remeras, sweaters) con catálogo dinámico, carrito completo, validación de formularios, generación de órdenes y diseño responsive.",
-        en: "Modern personalized products e-commerce app with dynamic catalog, full shopping cart, form validation, order generation and responsive design.",
-      },
-      image: "/images/projects/art-store.webp",
-      tags: [
-        { name: "React", icon: "devicon-react-plain colored" },
-        { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
-        { name: "Firebase", icon: "devicon-firebase-plain colored" }
-      ],
-      github: "https://github.com/zeuschris/Art-Store",
-      demo: "https://art-store-pink.vercel.app/",
-    },
-    {
       title: "Giotecnika",
       description: {
         es: "E-commerce de papelería moderno y responsivo, desarrollado con React, Vite y Firebase/Firestore. Incluye catálogo con filtros, carrito persistente, modo oscuro/claro, búsqueda en tiempo real y checkout validado.",
@@ -135,21 +134,6 @@ export function Projects() {
       ],
       github: "https://github.com/zeuschris/Flower-Store",
       demo: "https://floral-sky.vercel.app/",
-    },
-    {
-      title: "Naturaleza Viva",
-      description: {
-        es: "Sitio web desarrollado con WordPress y Elementor para un vivero ecológico, con catálogo de plantas, tienda online, secciones de blog y cuidados de plantas, y diseño atractivo y responsive.",
-        en: "WordPress site built with Elementor for an ecological plant nursery, featuring a plant catalog, online shop, blog and plant care guides, with a clean, engaging and responsive design.",
-      },
-      image: "/images/projects/nature.webp",
-      tags: [
-        { name: "WordPress", icon: "devicon-wordpress-plain colored" },
-        { name: "WooCommerce", icon: "devicon-woocommerce-plain colored" },
-        { name: "CSS", icon: "devicon-css3-plain colored" },
-      ],
-      github: null,
-      demo: "https://dev-naturalezaviva.pantheonsite.io/",
     },
   ]
 
